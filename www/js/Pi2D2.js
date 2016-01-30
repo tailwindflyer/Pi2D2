@@ -87,17 +87,17 @@ var Pi2D2 =  {
       this.pitch = this.pitch();
       this.roll = this.roll();
       this.compass = this.compass();
-      this.headingBug = this.headingBug();
+//      this.headingBug = this.headingBug();
       this.speed = this.speed();
       this.altitude = this.altitude();
       this.altimeter = this.altimeter();
-      this.gmeter = this.gmeter();
+//      this.gmeter = this.gmeter();
       this.vertspeed = this.vertspeed();    
 //      this.cdi = this.cdi();
-      this.glideslope = this.glideslope();
-      this.altitudeBug = this.altitudeBug();
-      this.slip = this.slipIndicator();
-      this.turn = this.turnIndicator();
+//      this.glideslope = this.glideslope();
+//      this.altitudeBug = this.altitudeBug();
+ //     this.slip = this.slipIndicator();
+//      this.turn = this.turnIndicator();
        
    return 1;
    
@@ -523,7 +523,7 @@ var Pi2D2 =  {
                     ).attr( {fill: '#ffde29'} );
          compassRose = svg.group();
 
-         headingBug = compassRose.line(Cx, Cy, Cx, (Cy-Cr) ).attr( { 'stroke-width': '10',stroke: '#FF00FF'} ); 
+//         headingBug = compassRose.line(Cx, Cy, Cx, (Cy-Cr) ).attr( { 'stroke-width': '10',stroke: '#FF00FF'} ); 
 
          compassRose.text( Cx, (Cy - Cr*.94), 'N').attr( s.cardinalFont );
        
@@ -733,7 +733,7 @@ var Pi2D2 =  {
         asi = {   dial : [],
                   centers: [],
                   window: {} };
-        svg.text( (x-30), (y-40), "GPS - MPH").attr({fill: '#ffffff', stroke: 'none', 'font-size': '10' });
+        svg.text( (x-30), (y-40), "IAS - MPH").attr({fill: '#ffffff', stroke: 'none', 'font-size': '10' });
           
         asi.group = svg.rect(x, (y-25), 55, 30).attr( {fill: 'none' });
         
