@@ -243,7 +243,7 @@ var Pi2D2 =  {
    
 ///////////////////////////
    glideslope: function() {
-      x = s.screen.x;
+/*      x = s.screen.x;
       y = s.screen.y;
       
       svg.g(
@@ -269,19 +269,19 @@ var Pi2D2 =  {
       this.inop.glideslope = svg.group (
          svg.rect( (x-85), (y/2)-97, 30, 194).attr( {fill: 'red', opacity: .8 })
       ).attr( {display: 'none'});
-/*
+
        /// VLOC Box
       svg.rect( 335,184, 60, 24).attr({fill: 'black', opacity: .5 } );
       svg.text( 365,203, 'VLOC').attr( {fill: '#ffffff', stroke: 'none', 'font-size': '20', 'text-anchor': 'middle' });       
 */
 
       // Altitude Box
-      this.altitudeBugBox = svg.g(
+/*      this.altitudeBugBox = svg.g(
          svg.rect( 320, 114, 75, 32).attr({fill: 'black', opacity: .3 } ),
          svg.text( 335, 123, "ALT Bug").attr({fill: '#ffffff', stroke: 'none', 'font-size': '10' }),
          this.altitudeBugText = svg.text( 358, 143, '0').attr( {fill: '#ffffff', stroke: 'none', 'font-size': '20', 'text-anchor': 'middle' })
       );
-      
+  */  
        return function( deflection ) {
          if ( deflection == null ) { return v.glideslope; }
          if ( deflection > 5 ) { deflection = 5;  }
